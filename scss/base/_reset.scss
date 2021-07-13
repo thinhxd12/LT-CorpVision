@@ -1,0 +1,18 @@
+* {
+  font-family: 'Jost', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $font-color;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a:hover{
+  text-decoration: none;
+}

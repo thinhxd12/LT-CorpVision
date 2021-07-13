@@ -1,0 +1,17 @@
+.txt-header-1 {
+  @include styleText(14px, 600, #7e7d7d);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.txt-header-2 {
+  @include styleText(35px, 700, $heading-color);
+  line-height: 45px;
+}
+
+.txt-text {
+  @include styleText(17px, 400, $font-color);
+  line-height: 27px;
+  opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+.features {
+  background-color: $bg-grey;
+  .feature__box {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+    margin-bottom: 25px;
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px;
+    transition: 0.3s ease;
+    &:hover {
+      transform: translateY(-0.25rem);
+      box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+        rgba(71, 63, 79, 0.16) 0px 5px 10px;
+    }
+    a {
+      @include styleText(22px, 600, $heading-color);
+      line-height: 28px;
+      transition: all 0.5s ease;
+      display: block;
+      margin-top: 1.5rem;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.home__item {
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 15px;
+      i {
+        margin-right: 5px;
+        color: $primary-color;
+      }
+      a {
+        @include styleText(18px, 600, $heading-color);
+        line-height: 28px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.home__item__img1 {
+  img {
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+}
+
+.home__item__img2 {
+  margin-top: 24px;
+  img {
+    border-radius: $border-radius;
+    overflow: hidden;
+    &:first-child {
+      margin-bottom: 16px;
+    }
+    &:last-child {
+      margin-top: 1rem;
+    }
+  }
+}

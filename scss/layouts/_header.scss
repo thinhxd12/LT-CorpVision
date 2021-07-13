@@ -1,0 +1,60 @@
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+  .navbar {
+    padding: 0;
+    .navbar-brand {
+      > .fa {
+        color: $primary-color;
+        font-size: 30px;
+      }
+      @include styleText(30px, 600, $white-color);
+      line-height: 30px;
+      p {
+        @include styleText(14px, 600, $white-color);
+        opacity: 0.9;
+        padding-left: 46px;
+        line-height: 16px;
+      }
+    }
+    .collapse {
+      ul {
+        .active a {
+          opacity: 1;
+          color: $white-color;
+        }
+        li {
+          padding: 0 10px;
+          .dropdown-menu {
+            border-radius: $border-radius;
+            a {
+              text-transform: uppercase;
+              @include styleText(15px, 600, $heading-color);
+              padding: 6px 20px;
+              transition: all 0.5s ease;
+              opacity: 0.8;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+          > a {
+            @include styleText(15px, 600, $white-color);
+            opacity: 0.8;
+            text-transform: uppercase;
+            padding: 14px 0 10px;
+            transition: all 0.5s ease;
+            &:hover {
+              opacity: 1;
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

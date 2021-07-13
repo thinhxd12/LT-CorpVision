@@ -1,0 +1,15 @@
+
+.btn__LearnMore{
+    padding: 15px 50px;
+    border-radius: $border-radius;
+    background-color: $primary-color;
+    font-size: 16px;
+    color: $white-color;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.btn__LearnMore:hover {
+    background-color: #008030;
+    color: $white-color;
+}
