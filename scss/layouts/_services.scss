@@ -1,0 +1,15 @@
+.services {
+  .service__item {
+    img {
+      border-radius: $border-radius;
+      overflow: hidden;
+    }
+    .service__item__info {
+      transform: translateY(-15px);
+      p {
+        max-width: 300px;
+        margin: auto auto;
+      }
+    }
+  }
+}

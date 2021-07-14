@@ -20,3 +20,14 @@ $('.slick-carousel').slick({
     autoplaySpeed: 3000,
     arrows: false,
   });
+
+  $('.slick-carousel-feedback').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+  });
+
+ 

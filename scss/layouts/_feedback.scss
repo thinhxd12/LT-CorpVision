@@ -1,0 +1,58 @@
+.feedback {
+  background-color: $bg-grey;
+}
+.feedback__item {
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .feedback__item__info {
+    display: flex;
+    justify-content: center;
+    .feedback__img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    h3 {
+      @include styleText(20px, 600, $heading-color);
+    }
+  }
+}
+
+.slick-carousel-feedback {
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    li {
+      button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        opacity: 0.5;
+        margin-right: 15px;
+        border: none;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.5);
+          opacity: 1;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background-color: $secondary-color;
+        transform: scale(1.5);
+        opacity: 1;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
