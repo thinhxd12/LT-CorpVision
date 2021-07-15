@@ -1,7 +1,7 @@
 .btn__LearnMore {
   padding: 15px 50px;
   border-radius: $border-radius;
-  background-color: $primary-color;
+  background-color: #00a63f;
   font-size: 16px;
   color: $white-color;
   font-weight: 600;
@@ -12,24 +12,31 @@
   }
 }
 
-.btn__LearnMore__1{
-    @extend .btn__LearnMore;
-    padding: 12px 35px;
+.btn__LearnMore__1 {
+  @extend .btn__LearnMore;
+  padding: 12px 35px;
+  background: $bg-color;
+  color: $heading-color;
+  line-height: 28px;
+  font-size: 19px;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  &:hover {
+    color: $primary-color;
     background: $bg-color;
-    color: $heading-color;
-    line-height: 28px;
-    font-size: 19px;
-    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
-    &:hover{
-        color: $primary-color;
-        background: $bg-color;
-    }
+  }
 }
 
-.btn__LearnMore__2{
-    @extend .btn__LearnMore__1;
-    border: none;
-    box-shadow: none;
-    font-size: 16px;
-    padding: 8px 35px;
+.btn__LearnMore__2 {
+  @extend .btn__LearnMore__1;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 8px 35px;
+}
+
+.btn__LearnMore__3 {
+  @extend .btn__LearnMore;
+  padding: 17px 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }

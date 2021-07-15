@@ -1,0 +1,49 @@
+.project {
+  background-color: #151421;
+  background-image: url(/images/map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  .project__info {
+    h3 {
+      @include styleText(35px, 700, $white-color);
+      margin-bottom: 16px;
+    }
+    p {
+      @include styleText(17px, 400, #eee);
+      margin: 0 auto;
+      max-width: 700px;
+      opacity: 0.6;
+    }
+  }
+
+  .project__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 0;
+    max-width: 550px;
+
+    input,
+    i {
+      padding: 14px 20px;
+      line-height: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #999;
+      width: 100%;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    i {
+      width: 50px;
+      border-right: none;
+      text-align: center;
+      border-radius: 0.25rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

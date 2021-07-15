@@ -1,5 +1,6 @@
 .header {
   height: 100px;
+  transition: height 0.5s;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -58,3 +59,60 @@
   }
 }
 
+.header__search {
+  i:first-child {
+    color: $primary-color;
+    font-size: 1rem;
+    color: $white-color;
+    display: inline-block;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    margin-right: 15px;
+  }
+  i:last-child {
+    font-size: 1.2rem;
+    color: $white-color;
+  }
+}
+
+.custom-header {
+  background-color: $bg-color;
+  height: 80px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  transition: height 0.5s;
+  .navbar {
+    .navbar-brand {
+      color: $heading-color;
+      p {
+        color: $heading-color;
+      }
+    }
+    .collapse {
+      .navbar-nav {
+        .active a {
+          color: $primary-color;
+        }
+      }
+      ul {
+        li {
+          a {
+            color: $font-color;
+            &:hover {
+              color: $font-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header__search {
+    i:last-child {
+      font-size: 1.2rem;
+      color: $font-color;
+    }
+  }
+}

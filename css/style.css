@@ -18,17 +18,17 @@ a:hover {
   text-decoration: none;
 }
 
-.btn__LearnMore, .btn__LearnMore__1, .btn__LearnMore__2 {
+.btn__LearnMore, .btn__LearnMore__1, .btn__LearnMore__2, .btn__LearnMore__3 {
   padding: 15px 50px;
   border-radius: 8px;
-  background-color: #009f4d;
+  background-color: #00a63f;
   font-size: 16px;
   color: #fff;
   font-weight: 600;
   transition: 0.5s all;
 }
 
-.btn__LearnMore:hover, .btn__LearnMore__1:hover, .btn__LearnMore__2:hover {
+.btn__LearnMore:hover, .btn__LearnMore__1:hover, .btn__LearnMore__2:hover, .btn__LearnMore__3:hover {
   background-color: #008030;
   color: #fff;
 }
@@ -52,6 +52,100 @@ a:hover {
   box-shadow: none;
   font-size: 16px;
   padding: 8px 35px;
+}
+
+.btn__LearnMore__3 {
+  padding: 17px 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.blog__card {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
+
+.blog__card .card__img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.blog__card .card__img img {
+  transition: all 0.5s ease;
+}
+
+.blog__card .card__img:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.blog__card .card__link {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.blog__card .card__link a:first-child {
+  font-size: 17px;
+  font-weight: 400;
+  color: #999;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.blog__card .card__link a:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f3a64;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.blog__card .card__link a:last-child:hover {
+  color: #009f4d;
+}
+
+.blog__card .card__date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.blog__card .card__date span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+}
+
+.blog__card .card__date a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f3a64;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+.blog__card .card__date a:hover {
+  color: #009f4d;
+}
+
+.blog__card .card__date p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
 }
 
 .txt-header-1 {
@@ -86,6 +180,7 @@ a:hover {
 
 .header {
   height: 100px;
+  transition: height 0.5s;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -165,6 +260,57 @@ a:hover {
 .header .navbar .collapse ul li > a:hover {
   opacity: 1;
   color: #fff;
+}
+
+.header__search i:first-child {
+  color: #009f4d;
+  font-size: 1rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background-color: #009f4d;
+  margin-right: 15px;
+}
+
+.header__search i:last-child {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.custom-header {
+  background-color: #fff;
+  height: 80px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  transition: height 0.5s;
+}
+
+.custom-header .navbar .navbar-brand {
+  color: #3f3a64;
+}
+
+.custom-header .navbar .navbar-brand p {
+  color: #3f3a64;
+}
+
+.custom-header .navbar .collapse .navbar-nav .active a {
+  color: #009f4d;
+}
+
+.custom-header .navbar .collapse ul li a {
+  color: #666;
+}
+
+.custom-header .navbar .collapse ul li a:hover {
+  color: #666;
+}
+
+.custom-header .header__search i:last-child {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .carousel .slick-carousel .carousel__item {
@@ -592,5 +738,179 @@ a:hover {
 
 .slick-carousel-feedback .slick-dots .slick-active button:focus {
   outline: none;
+}
+
+.project {
+  background-color: #151421;
+  background-image: url(/images/map.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project .project__info h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.project .project__info p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  opacity: 0.6;
+}
+
+.project .project__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto 0;
+  max-width: 550px;
+}
+
+.project .project__form input,
+.project .project__form i {
+  padding: 14px 20px;
+  line-height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #999;
+  width: 100%;
+}
+
+.project .project__form input:focus-visible,
+.project .project__form i:focus-visible {
+  outline: none;
+}
+
+.project .project__form i {
+  width: 50px;
+  border-right: none;
+  text-align: center;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.footer {
+  background-color: #151421;
+}
+
+.footer a,
+.footer p {
+  font-size: 18px;
+  font-weight: 400px;
+  color: #97a1a9;
+  opacity: 0.8;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.footer a {
+  transition: all 0.5s;
+}
+
+.footer a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer .footer__social {
+  cursor: pointer;
+}
+
+.footer .footer__social i {
+  font-size: 14px;
+  color: #97a1a9;
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+
+.footer .footer__social i:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer .footer__item h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.footer .footer__item p {
+  margin-bottom: 10px;
+}
+
+.footer .footer__item__1 h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.footer .footer__item__1 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+.footer .copyright p {
+  padding: 24px 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.footer .copyright a {
+  color: #009f4d;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.footer .copyright a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer .navbar-brand {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.footer .navbar-brand > .fa {
+  color: #009f4d;
+  font-size: 30px;
+}
+
+.footer .navbar-brand p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  padding-left: 46px;
+  line-height: 16px;
 }
 /*# sourceMappingURL=style.css.map */

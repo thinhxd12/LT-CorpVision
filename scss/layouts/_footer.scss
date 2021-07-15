@@ -1,0 +1,86 @@
+.footer {
+  background-color: #151421;
+
+  a,
+  p {
+    font-size: 18px;
+    font-weight: 400px;
+    color: #97a1a9;
+    opacity: 0.8;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+  }
+  a {
+    transition: all 0.5s;
+    &:hover {
+      color: $white-color;
+      opacity: 1;
+    }
+  }
+
+  .footer__social {
+    cursor: pointer;
+    i {
+      font-size: 14px;
+      color: #97a1a9;
+      margin-right: 15px;
+      transition: all 0.5s;
+      &:hover {
+        color: $white-color;
+        opacity: 1;
+      }
+    }
+  }
+
+  .footer__item {
+    h3 {
+      @include styleText(22px, 400, $white-color);
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .footer__item__1 {
+    h3 {
+      @include styleText(22px, 400, $white-color);
+      margin-bottom: 25px;
+    }
+    a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    p {
+      padding: 24px 0;
+      margin: 0;
+      font-size: 17px;
+    }
+    a {
+      color: $primary-color;
+      transition: all 0.5s;
+      opacity: 1;
+      &:hover {
+        color: $white-color;
+        opacity: 1;
+      }
+    }
+  }
+  .navbar-brand {
+    > .fa {
+      color: $primary-color;
+      font-size: 30px;
+    }
+    @include styleText(30px, 600, $white-color);
+    line-height: 30px;
+    p {
+      @include styleText(14px, 600, $white-color);
+      opacity: 0.9;
+      padding-left: 46px;
+      line-height: 16px;
+    }
+  }
+}
